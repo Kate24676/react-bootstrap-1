@@ -1,0 +1,17 @@
+import React from 'react'
+import PropTypes from 'prop-types';
+
+class ForecastDetails extends React.Component {
+  render() {
+    return <h1 className="forecast">{`${this.props.date}, ${this.props.temperature}, ${this.props.wind}, ${this.props.humidity}`}</h1>
+  }
+}
+
+LocationDetails.propTypes = {
+  date: PropTypes.string.isRequired,
+  temperature: PropTypes.string.isRequired,
+    wind: PropTypes.string.isRequired,
+  humidity: PropTypes.string.isRequired,
+};
+
+export default ForecastDetails;
