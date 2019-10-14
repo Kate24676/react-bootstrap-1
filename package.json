@@ -48,6 +48,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "jest": {
+    "testEnvironment": "node",
     "moduleNameMapper": {
       "^.+\\.s?css$": "<rootDir>/__jest__/stub.js"
     },
@@ -57,7 +58,6 @@
     "setupFiles": [
       "raf/polyfill",
       "<rootDir>/__jest__/setup.js"
-    ],
-    "testEnvironment": "node"
+    ]
   }
 }

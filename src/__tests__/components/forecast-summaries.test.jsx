@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ForecastSummary from '../../__jest__/src/components/forecast-summary';
+import ForecastSummary from './forecast-summary.test';
 
 it('renders the date', () => {
   const wrapper = shallow((
